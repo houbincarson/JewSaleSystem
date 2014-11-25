@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ADA2D7A-307E-4D84-AE82-B40EA2DDD74C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JewSaleSystem</RootNamespace>
+    <AssemblyName>JewSaleSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmProdCheckStock.cs" />
+    <Compile Include="frmProdCheckStock.Designer.cs">
+      <DependentUpon>frmProdCheckStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdCheckStockEdit.cs" />
+    <Compile Include="frmProdCheckStockEdit.Designer.cs">
+      <DependentUpon>frmProdCheckStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售管理\frmRecOldGold.cs" />
+    <Compile Include="销售管理\frmRecOldGold.Designer.cs">
+      <DependentUpon>frmRecOldGold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售管理\frmRecOldGoldEdit.cs" />
+    <Compile Include="销售管理\frmRecOldGoldEdit.Designer.cs">
+      <DependentUpon>frmRecOldGoldEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs" />
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统设置\UpdatePassword.cs" />
+    <Compile Include="系统设置\UpdatePassword.Designer.cs">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdOutStock.cs" />
+    <Compile Include="产品管理\frmProdOutStock.Designer.cs">
+      <DependentUpon>frmProdOutStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdOutStockEdit.cs" />
+    <Compile Include="产品管理\frmProdOutStockEdit.Designer.cs">
+      <DependentUpon>frmProdOutStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoleManageEdit.cs" />
+    <Compile Include="frmRoleManageEdit.Designer.cs">
+      <DependentUpon>frmRoleManageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表管理\frmInStockQuery.cs" />
+    <Compile Include="报表管理\frmInStockQuery.Designer.cs">
+      <DependentUpon>frmInStockQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdInStock.cs" />
+    <Compile Include="产品管理\frmProdInStock.Designer.cs">
+      <DependentUpon>frmProdInStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdInStockEdit.cs" />
+    <Compile Include="产品管理\frmProdInStockEdit.Designer.cs">
+      <DependentUpon>frmProdInStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="库存管理\frmProdStockHistory.cs" />
+    <Compile Include="库存管理\frmProdStockHistory.Designer.cs">
+      <DependentUpon>frmProdStockHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdStyleEdit.cs" />
+    <Compile Include="产品管理\frmProdStyleEdit.Designer.cs">
+      <DependentUpon>frmProdStyleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProdStyleQuery.cs" />
+    <Compile Include="产品管理\frmProdStyleQuery.Designer.cs">
+      <DependentUpon>frmProdStyleQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="库存管理\frmProdStockQty.cs" />
+    <Compile Include="库存管理\frmProdStockQty.Designer.cs">
+      <DependentUpon>frmProdStockQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\frmSetGold.cs" />
+    <Compile Include="基础设置\frmSetGold.Designer.cs">
+      <DependentUpon>frmSetGold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProductInfo.cs" />
+    <Compile Include="产品管理\frmProductInfo.Designer.cs">
+      <DependentUpon>frmProductInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\frmProductInfoEdit.cs" />
+    <Compile Include="产品管理\frmProductInfoEdit.Designer.cs">
+      <DependentUpon>frmProductInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoleManage.cs" />
+    <Compile Include="frmRoleManage.Designer.cs">
+      <DependentUpon>frmRoleManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="产品管理\ProductInfo.cs" />
+    <Compile Include="基础设置\frmSuppManage.cs" />
+    <Compile Include="基础设置\frmSuppManage.Designer.cs">
+      <DependentUpon>frmSuppManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\SuppInfo.cs" />
+    <Compile Include="基础设置\frmSuppManageEdit.cs" />
+    <Compile Include="基础设置\frmSuppManageEdit.Designer.cs">
+      <DependentUpon>frmSuppManageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\frmPersonManageEdit.cs" />
+    <Compile Include="基础设置\frmPersonManageEdit.Designer.cs">
+      <DependentUpon>frmPersonManageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\frmPersonManageMaster.cs" />
+    <Compile Include="基础设置\frmPersonManageMaster.Designer.cs">
+      <DependentUpon>frmPersonManageMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\PersonInfo.cs" />
+    <Compile Include="销售管理\frmSaleOutEdit.cs" />
+    <Compile Include="销售管理\frmSaleOutEdit.Designer.cs">
+      <DependentUpon>frmSaleOutEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售管理\frmSaleOutMaster.cs" />
+    <Compile Include="销售管理\frmSaleOutMaster.Designer.cs">
+      <DependentUpon>frmSaleOutMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="类库\ConfigHelper.cs" />
+    <Compile Include="类库\DxCtlHelper.cs" />
+    <Compile Include="类库\GlobalUserInfo.cs" />
+    <Compile Include="类库\MessageDxUtil.cs" />
+    <Compile Include="类库\SQLHelper.cs" />
+    <Compile Include="类库\StaticFunction.cs" />
+    <Compile Include="销售管理\frmSaleBackEdit.cs" />
+    <Compile Include="销售管理\frmSaleBackEdit.Designer.cs">
+      <DependentUpon>frmSaleBackEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售管理\frmSaleBackMaster.cs" />
+    <Compile Include="销售管理\frmSaleBackMaster.Designer.cs">
+      <DependentUpon>frmSaleBackMaster.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmProdCheckStock.resx">
+      <DependentUpon>frmProdCheckStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdCheckStockEdit.resx">
+      <DependentUpon>frmProdCheckStockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售管理\frmRecOldGold.resx">
+      <DependentUpon>frmRecOldGold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售管理\frmRecOldGoldEdit.resx">
+      <DependentUpon>frmRecOldGoldEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统设置\UpdatePassword.resx">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdOutStock.resx">
+      <DependentUpon>frmProdOutStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdOutStockEdit.resx">
+      <DependentUpon>frmProdOutStockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoleManageEdit.resx">
+      <DependentUpon>frmRoleManageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表管理\frmInStockQuery.resx">
+      <DependentUpon>frmInStockQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdInStock.resx">
+      <DependentUpon>frmProdInStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdInStockEdit.resx">
+      <DependentUpon>frmProdInStockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="库存管理\frmProdStockHistory.resx">
+      <DependentUpon>frmProdStockHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdStyleEdit.resx">
+      <DependentUpon>frmProdStyleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProdStyleQuery.resx">
+      <DependentUpon>frmProdStyleQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="库存管理\frmProdStockQty.resx">
+      <DependentUpon>frmProdStockQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\frmSetGold.resx">
+      <DependentUpon>frmSetGold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProductInfo.resx">
+      <DependentUpon>frmProductInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="产品管理\frmProductInfoEdit.resx">
+      <DependentUpon>frmProductInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoleManage.resx">
+      <DependentUpon>frmRoleManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\frmSuppManage.resx">
+      <DependentUpon>frmSuppManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\frmSuppManageEdit.resx">
+      <DependentUpon>frmSuppManageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表管理\入库报表.rdlc" />
+    <EmbeddedResource Include="基础设置\frmPersonManageEdit.resx">
+      <DependentUpon>frmPersonManageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\frmPersonManageMaster.resx">
+      <DependentUpon>frmPersonManageMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售管理\frmSaleOutEdit.resx">
+      <DependentUpon>frmSaleOutEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售管理\frmSaleOutMaster.resx">
+      <DependentUpon>frmSaleOutMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="销售管理\frmSaleBackEdit.resx">
+      <DependentUpon>frmSaleBackEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售管理\frmSaleBackMaster.resx">
+      <DependentUpon>frmSaleBackMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\add - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\filesearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\saveas.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\trash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\accept.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\addfile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\adduser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\backward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\bug.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\burn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\cd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\chat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\clock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\configure.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\console.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\cutb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\deletefile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\deleteuser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\documentsorcopy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\fav.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\favadd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\favb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\favbadd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\filelocked.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\floppy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\folderlocked.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\foldermove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\folderopen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\foldersearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\gotoapp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\gowebsite.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\groupofusers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\hd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\hdlocked.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\hdsearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\infoabout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\mailpgp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\mailsend.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\moneyb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\moneyc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\movefile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\network.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\networkoptions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\networksearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\paint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\pastfile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\pictures.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\printpreview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\stats.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\textfile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\trashb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\userb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\userid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\userlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\web.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\webhd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\weblocked.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\weboptions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\websearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\window.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\windowb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\wizard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\zoomin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ico\48x48\zoomout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
